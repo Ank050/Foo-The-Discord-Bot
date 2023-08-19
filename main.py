@@ -13,7 +13,7 @@ client.message_content = True
 db = TinyDB("points.json")
 table = db.table("points_table")
 User = Query()
-api_key = "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"
+api_key = "APIKEY"
 openai.api_key = api_key
 
 
@@ -281,7 +281,7 @@ async def on_message(message):
 async def run_bot():
     try:
         await client.start(
-            "MTAwODAwNjI1NDU5NTE0NTc5OQ.GBe0mL.V2zmEvRGyAOi-xtalWYCq_jf6U5JmiL5_LRaPg"
+            "TOKEN"
         )
     except KeyboardInterrupt:
         await client.close()
